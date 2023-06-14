@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+<rdf:RDF xmlns="http://www.example.com/transport.owl#"
+     xml:base="http://www.example.com/transport.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	 
+	<owl:Ontology rdf:about="">
+		<rdfs:comment xml:lang="en">An ontology for transportation domain</rdfs:comment>
+		<owl:versionInfo xml:lang="en">v.1.0. Initial Version</owl:versionInfo>
+		<owl:versionInfo rdf:datatype="&xsd;string">version 1.0</owl:versionInfo>
+	</owl:Ontology>
+	
+	<!-- OwlThing -->
+	<owl:Class rdf:about="#TransportasiUmum">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#TransportasiPribadi">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#TransportasiBerbagi">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#InfrastrukturTransportasi">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#RegulasiDanKebijakan">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#TeknologiTransportasi">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+	<owl:Class rdf:about="#SaranaParkir">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</owl:Class>
+
+    <!-- Class Definitions -->
+    <owl:Class rdf:about="#TransportasiUmum"/>
+    <owl:Class rdf:about="#TransportasiPribadi"/>
+    <owl:Class rdf:about="#TransportasiBerbagi"/>
+    <owl:Class rdf:about="#InfrastrukturTransportasi"/>
+    <owl:Class rdf:about="#RegulasiDanKebijakan"/>
+    <owl:Class rdf:about="#TeknologiTransportasi"/>
+    <owl:Class rdf:about="#SaranaParkir"/>
+
+    <owl:Class rdf:about="#Bus">
+        <rdfs:subClassOf rdf:resource="#TransportasiUmum"/>
+    </owl:Class>
+    <owl:Class rdf:about="#KeretaApi">
+        <rdfs:subClassOf rdf:resource="#TransportasiUmum"/>
+    </owl:Class>
+    <owl:Class rdf:about="#AngkutanKota">
+        <rdfs:subClassOf rdf:resource="#TransportasiUmum"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Mobil">
+        <rdfs:subClassOf rdf:resource="#TransportasiPribadi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#SepedaMotor">
+        <rdfs:subClassOf rdf:resource="#TransportasiPribadi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Sepeda">
+        <rdfs:subClassOf rdf:resource="#TransportasiPribadi"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ridesharing">
+        <rdfs:subClassOf rdf:resource="#TransportasiBerbagi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Carsharing">
+        <rdfs:subClassOf rdf:resource="#TransportasiBerbagi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Bikesharing">
+        <rdfs:subClassOf rdf:resource="#TransportasiBerbagi"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Jalan">
+        <rdfs:subClassOf rdf:resource="#InfrastrukturTransportasi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Jembatan">
+        <rdfs:subClassOf rdf:resource="#InfrastrukturTransportasi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#RelKeretaApi">
+        <rdfs:subClassOf rdf:resource="#InfrastrukturTransportasi"/>
+    </owl:Class>
+	
+	<owl:Class rdf:about="#IzinBerkendara">
+		<rdfs:subClassOf rdf:resource="#RegulasiDanKebijakan"/>
+	</owl:Class>
+	<owl:Class rdf:about="#PajakKendaraan">
+		<rdfs:subClassOf rdf:resource="#RegulasiDanKebijakan"/>
+	</owl:Class>
+	<owl:Class rdf:about="#KebijakanParkir">
+		<rdfs:subClassOf rdf:resource="#RegulasiDanKebijakan"/>
+	</owl:Class>
+	
+    <owl:Class rdf:about="#GPS">
+        <rdfs:subClassOf rdf:resource="#TeknologiTransportasi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#SistemPembayaranElektronik">
+        <rdfs:subClassOf rdf:resource="#TeknologiTransportasi"/>
+    </owl:Class>
+    <owl:Class rdf:about="#SistemPengawasan">
+        <rdfs:subClassOf rdf:resource="#TeknologiTransportasi"/>
+    </owl:Class>
+	
+    <owl:Class rdf:about="#ParkirGedung">
+        <rdfs:subClassOf rdf:resource="#SaranaParkir"/>
+    </owl:Class>
+    <owl:Class rdf:about="#ParkirMotorDiPinggirJalan">
+        <rdfs:subClassOf rdf:resource="#SaranaParkir"/>
+    </owl:Class>
+    <owl:Class rdf:about="#ParkirSepedaDiAreaKampus">
+        <rdfs:subClassOf rdf:resource="#SaranaParkir"/>
+    </owl:Class>
+
+
+    <!-- Individual Definitions -->
+    <owl:NamedIndividual rdf:about="#Transjakarta">
+        <rdf:type rdf:resource="#Bus"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp3.500</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#KoperasiTangerang">
+        <rdf:type rdf:resource="#Bus"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">45 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp5.000</biayaPerTrip>
+    </owl:NamedIndividual>
+	
+    <owl:NamedIndividual rdf:about="#KRLCommuterLine">
+        <rdf:type rdf:resource="#KeretaApi"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">45 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp8.000</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ArgoBromoAnggrek">
+        <rdf:type rdf:resource="#KeretaApi"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">8 jam</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp35.0000</biayaPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#AngkotBandung">
+        <rdf:type rdf:resource="#AngkutanKota"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">1 jam</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp5.000</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#MikroletJakarta">
+        <rdf:type rdf:resource="#AngkutanKota"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp2.000</biayaPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ToyotaAvanza">
+        <rdf:type rdf:resource="#Mobil"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">45 menit</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Rp100.000</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#HondaJazz">
+        <rdf:type rdf:resource="#Mobil"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Rp8.0000</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#HondaBeat">
+        <rdf:type rdf:resource="#SepedaMotor"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">20 menit</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Rp20.000</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#YamahaNMAX">
+        <rdf:type rdf:resource="#SepedaMotor"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Rp30.000</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#PolygonXtrada">
+        <rdf:type rdf:resource="#Sepeda"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">1 jam</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Tidak memerlukan biaya bahan bakar</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#UnitedMiami">
+        <rdf:type rdf:resource="#Sepeda"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaBahanBakarPerTrip rdf:datatype="&xsd;string">Tidak memerlukan biaya bahan bakar</biayaBahanBakarPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Gojek">
+        <rdf:type rdf:resource="#Ridesharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp20.000</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Grab">
+        <rdf:type rdf:resource="#Ridesharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">45 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp25.000</biayaPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#CarFreeDay">
+        <rdf:type rdf:resource="#Carsharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">1 jam</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp50.000</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#BlueBirdShare">
+        <rdf:type rdf:resource="#Carsharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp30.000</biayaPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Ofo">
+        <rdf:type rdf:resource="#Bikesharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">20 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp5.000</biayaPerTrip>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#GOWES">
+        <rdf:type rdf:resource="#Bikesharing"/>
+        <waktuTempuhRataRata rdf:datatype="&xsd;string">30 menit</waktuTempuhRataRata>
+        <biayaPerTrip rdf:datatype="&xsd;string">Rp10.000</biayaPerTrip>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#JalanSudirmanJakarta">
+        <rdf:type rdf:resource="#Jalan"/>
+        <panjang rdf:datatype="&xsd;string">5 km</panjang>
+        <lebar rdf:datatype="&xsd;string">6 lajur</lebar>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#JalanRayaBogor">
+        <rdf:type rdf:resource="#Jalan"/>
+        <panjang rdf:datatype="&xsd;string">10 km</panjang>
+        <lebar rdf:datatype="&xsd;string">4 lajur</lebar>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#JembatanSuramadu">
+        <rdf:type rdf:resource="#Jembatan"/>
+        <panjang rdf:datatype="&xsd;string">5,4 km</panjang>
+        <kapasitas rdf:datatype="&xsd;string">50000 kendaraan per hari</kapasitas>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#JembatanAmperaPalembang">
+        <rdf:type rdf:resource="#Jembatan"/>
+        <panjang rdf:datatype="&xsd;string">1,2 km</panjang>
+        <kapasitas rdf:datatype="&xsd;string">10000 kendaraan per hari</kapasitas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#JalurKAJakarta-Bandung">
+        <rdf:type rdf:resource="#RelKeretaApi"/>
+        <panjang rdf:datatype="&xsd;string">150 km</panjang>
+        <kapasitas rdf:datatype="&xsd;string">10000 penumpang per hari</kapasitas>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#JalurKASurabaya-Malang">
+        <rdf:type rdf:resource="#RelKeretaApi"/>
+        <panjang rdf:datatype="&xsd;string">200 km</panjang>
+        <kapasitas rdf:datatype="&xsd;string">5000 penumpang per hari</kapasitas>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#SIM_A">
+        <rdf:type rdf:resource="#IzinBerkendara"/>
+        <minimal_usia rdf:datatype="&xsd;string">17</minimal_usia>
+        <aturan rdf:datatype="&xsd;string">Sanksi berupa denda Rp 500.000 jika melanggar aturan</aturan>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#SIM_C">
+        <rdf:type rdf:resource="#IzinBerkendara"/>
+        <minimal_usia rdf:datatype="&xsd;string">17</minimal_usia>
+        <aturan rdf:datatype="&xsd;string">Sanksi berupa denda Rp 500.000 jika melanggar aturan</aturan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#PajakMobil">
+        <rdf:type rdf:resource="#PajakKendaraan"/>
+        <pembayaran rdf:datatype="&xsd;string">Setiap Tahun</pembayaran>
+        <aturan rdf:datatype="&xsd;string">Sanksi berupa denda Rp 1.000.000 jika tidak membayar pajak</aturan>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#PajakMotor">
+        <rdf:type rdf:resource="#PajakKendaraan"/>
+        <pembayaran rdf:datatype="&xsd;string">Setiap 6 Bulan</pembayaran>
+        <aturan rdf:datatype="&xsd;string">Sanksi berupa denda Rp 500.000 jika tidak membayar pajak</aturan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#ParkirLiarDilarang">
+        <rdf:type rdf:resource="#KebijakanParkir"/>
+        <lingkup rdf:datatype="&xsd;string">Seluruh Kota</lingkup>
+        <aturan rdf:datatype="&xsd;string">Sanksi berupa denda Rp 500.000 jika parkir di tempat yang tidak diperbolehkan</aturan>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#ParkirGratisDiHariLibur">
+        <rdf:type rdf:resource="#KebijakanParkir"/>
+        <lingkup rdf:datatype="&xsd;string">Pusat Kota</lingkup>
+        <aturan rdf:datatype="&xsd;string">Hanya berlaku di hari Sabtu dan Minggu</aturan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#GPSDiMobil">
+        <rdf:type rdf:resource="#GPS"/>
+        <efisiensi rdf:datatype="&xsd;string">Menentukan rute tercepat</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Melacak posisi kendaraan</keamanan>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="#GPSDiSepeda">
+        <rdf:type rdf:resource="#GPS"/>
+        <efisiensi rdf:datatype="&xsd;string">Menentukan rute terdekat</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Melacak posisi kendaraan</keamanan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#E-toll">
+        <rdf:type rdf:resource="#SistemPembayaranElektronik"/>
+        <efisiensi rdf:datatype="&xsd;string">Pembayaran tol</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Melindungi data pengguna</keamanan>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#E-money">
+        <rdf:type rdf:resource="#SistemPembayaranElektronik"/>
+        <efisiensi rdf:datatype="&xsd;string">Pembayaran transportasi umum</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Melindungi data pengguna</keamanan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#CCTVDiJalanRaya">
+        <rdf:type rdf:resource="#SistemPengawasan"/>
+        <efisiensi rdf:datatype="&xsd;string">Memantau lalu lintas</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Mencegah tindak kejahatan</keamanan>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#SistemPengawasanDiStasiunKeretaApi">
+        <rdf:type rdf:resource="#SistemPengawasan"/>
+        <efisiensi rdf:datatype="&xsd;string">Memantau keamanan penumpang</efisiensi>
+        <keamanan rdf:datatype="&xsd;string">Mencegah tindak kejahatan</keamanan>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#PlazaIndonesia">
+        <rdf:type rdf:resource="#ParkirGedung"/>
+        <kapasitas rdf:datatype="&xsd;string">1000 mobil</kapasitas>
+        <biaya rdf:datatype="&xsd;string">10000 per jam</biaya>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#GrandIndonesia">
+        <rdf:type rdf:resource="#ParkirGedung"/>
+        <kapasitas rdf:datatype="&xsd;string">2000 mobil</kapasitas>
+        <biaya rdf:datatype="&xsd;string">15000 per jam</biaya>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#JalanSudirmanJakarta">
+        <rdf:type rdf:resource="#ParkirMotorDiPinggirJalan"/>
+        <kapasitas rdf:datatype="&xsd;string">100 motor</kapasitas>
+        <biaya rdf:datatype="&xsd;string">2000 per jam</biaya>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#JalanMalioboroYogyakarta">
+        <rdf:type rdf:resource="#ParkirMotorDiPinggirJalan"/>
+        <kapasitas rdf:datatype="&xsd;string">50 motor</kapasitas>
+        <biaya rdf:datatype="&xsd;string">1000 per jam</biaya>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="#UniversitasIndonesia">
+        <rdf:type rdf:resource="#ParkirSepedaDiAreaKampus"/>
+        <kapasitas rdf:datatype="&xsd;string">500 sepeda</kapasitas>
+        <biaya rdf:datatype="&xsd;string">Tidak memerlukan biaya parkir</biaya>
+    </owl:NamedIndividual>	
+	<owl:NamedIndividual rdf:about="#InstitutTeknologiBandung">
+        <rdf:type rdf:resource="#ParkirSepedaDiAreaKampus"/>
+        <kapasitas rdf:datatype="&xsd;string">300 sepeda</kapasitas>
+        <biaya rdf:datatype="&xsd;string">Tidak memerlukan biaya parkir</biaya>
+    </owl:NamedIndividual>
+</rdf:RDF>
