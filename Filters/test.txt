@@ -1,0 +1,92 @@
+@@/(//|\.|^)github\.[a-z]{2,20}(/|$)/$document,match-case,domain=~com|~org|~net|~co|~blog|~community|~host|~io|~microsoft|~office
+@@||*.whatsapp.*
+@@||127.0.0.1^$important,document
+@@||208.67.222.222
+@@||2620:119:35::35
+@@||7tv.app^
+@@||academy.binance.com^
+@@||addmefast.com^
+@@||b-graph*.facebook.com
+@@||blog.fastssh.com^
+@@||bowfile.com^
+@@||chat.openai.com^$important,document
+@@||connect.facebook.*
+@@||cookielaw.org^
+@@||cyou^$doc
+@@||dashboard.honeygain.com^
+@@||discord.com^$important,document
+@@||docs.google.com^$important,document
+@@||elitetunnel.com^
+@@||fonts.gstatic.com^
+@@||graph*.facebook.com
+@@||graph*.instagram.com
+@@||kampusmerdeka.kemdikbud.go.id^$important,document
+@@||leak.sx^$important,document
+@@||network-test.debian.org^
+@@||resolver1.opendns.com^
+@@||tiny.cc^$important,document
+@@||www.nicehash.com^
+@@||www.racevpn.com^
+@@||www.scribbr.com^
+banghaji.com###chp_ads_blocker-modal
+banghaji.com###chp_ads_blocker-overlay
+blog.fastssh.com###lrgwkd-blanket
+bowfile.com###aswift_1
+bowfile.com##div.main-container.clear-adblock:nth-child(3) > section:first-child > div.container > div.row.align-items-center.justify-content-around.download-page > div.col-md-12.text-center.advert-wrapper.top-advert:nth-child(3)
+calculator-online.net###hon_phen_pach_kar
+elamigos-games.com##div.container:nth-child(2) > div.row:nth-child(8) > div.col-lg-2.col-md-3.col-sm-5.portfolio-item:first-child
+fastssh.com###ssh-server
+fastssh.com###wrap > center:nth-child(13)
+fsagung.blogspot.com###g207
+game.downloadtanku.org###adlhdpqsnjudmwnrddqvnoyupoamlmtfitzlomhnwgxqvrpvtpqzxl
+game.downloadtanku.org###ouibounce-modal
+game.downloadtanku.org##.nvvadxflouhdwlzcxvmcvbkaxrbvltrfdqcxbaajntqmvsktkzerzvthddpj, .edbtczisvpsdlzpyjzvzizkfonudcoxdrnnbqbkyxvueyzlhvqlbtzzhddpj
+geeksforgeeks.org##div.modal-container:nth-child(21)
+home.s.id###__next > div:nth-child(2) > div.flex.min-h-screen.w-full:first-child > div.main-dashboard.bg-gray-50.dark\:bg-gray-800.flex-1.flex.flex-col.lg\:pl-\[240px\].xl\:pl-\[265px\].w-full:last-child > div.flex-1.mt-16.w-full.h-full.p-4:last-child > div.flex.flex-wrap > div.w-3\/12.pl-6.hidden.xl\:block:last-child > div.sticky.top-20 > div.flex.justify-end.mt-4:last-child
+home.s.id###__next > div:nth-child(2) > div.flex.min-h-screen.w-full:first-child > div.main-dashboard.bg-gray-50.dark\:bg-gray-800.flex-1.flex.flex-col.lg\:pl-\[240px\].xl\:pl-\[265px\].w-full:last-child > div.flex-1.mt-16.w-full.h-full.p-4:last-child > div.flex.flex-wrap > div.w-full.xl\:w-9\/12:first-child > div:nth-child(7)
+igg-games.com###dkwids98s > a > img
+igg-games.com###sdwfe1 > a > img
+igg-games.com###widget-text-6 > div.textwidget:last-child > p:first-child > a > img.alignnone.wp-image-260834.size-full
+kabargames.id###post-18129 > div.post__content:nth-child(3) > div.dable-content-wrapper:nth-child(2) > div.ads-content-container:nth-child(12)
+kabargames.id###post-18129 > div.post__content:nth-child(3) > div.dable-content-wrapper:nth-child(2) > p:nth-child(11) > a > button.btn.glowing.kabargames-btn.mt-15
+keepv.id###moreOptions > h6:last-child > div.row > div.col-lg-12 > table.table:last-child > tbody:last-child > tr:last-child
+link.centipedia.net###qlhdum-blanket
+mazterize.com###tp-section-left > div.post-content:first-child > div.post-outer.clearfix > div.post_content.entry-content:nth-child(4) > p:nth-child(17)
+paste.bin.sx###abDetectorModal
+paste.bin.sx##div.movilno:nth-child(13)
+pixlr.com###modal*
+primeos.in###QOp5Xbwd5bprvS61xTnGW9fRLQ102Y
+primeos.in###RNN8xJCqNM83pNePstHr5PNXVVBZ0v
+scribbr.com###citationTrustpilot
+sekilasinfo.net###chp_ads_blocker-modal
+sekilasinfo.net###chp_ads_blocker-overlay
+smackstudio.com##div.cli-modal-backdrop.cli-fade.cli-popupbar-overlay.cli-show:nth-child(16)
+team-octavi.com###ttzauuuvqrkrpbdibxnzwfjdwxdvtoyydoqdavfcfhlyklsazgekri
+teams.gg##.sponsor-unit, .sponsor-unit--leaderboard-fixed
+teams.gg##div.site:nth-child(2) > main.site__content.js-site__content:last-child > article.site__full.creation-page-v2:first-child > sponsor-unit.sponsor-unit.sponsor-unit--leaderboard-fixed:last-child
+techspot.com###content > div > div.wrapper > div.col-2-3:first-child > div.wrapperMobileOnly:last-child > article > div:nth-child(7)
+top.gg###tabs-410--tabpanel-0 > div.chakra-stack.css-guayhs > div.chakra-stack.css-z77yfw:nth-child(2) > div.chakra-stack.css-1by7mcm > article.chakra-stack.css-1xgcd9o:nth-child(2)
+twitch.tv###root > div.Layout-sc-1xcs6mc-0.hRpbps > div.Layout-sc-1xcs6mc-0.kBprba:nth-child(2) > div.Layout-sc-1xcs6mc-0.dajtya:nth-child(2) > main.InjectLayout-sc-1i43xsx-0.iqhyKW.twilight-main:nth-child(2) > div.root-scrollable.scrollable-area.scrollable-area--suppress-scroll-x:nth-child(2) > div.simplebar-scroll-content:last-child > div.simplebar-content.root-scrollable__content > div.Layout-sc-1xcs6mc-0.hUemkh.root-scrollable__wrapper > div.Layout-sc-1xcs6mc-0.wZVfj > div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
+twitch.tv##*[class*="midroll-ad-"]
+twitch.tv##*[id*="midroll-ad-"]
+twitch.tv##+js(twitch-videoad)
+vlr.gg###wrapper > div.col-container:first-child > div.col.mod-2:nth-child(2) > a.wf-card.mod-flat:nth-child(4)
+youtube.com###card:contains(Messages that appear are from)
+youtube.com###card:contains(Subscribers-only mode)
+youtube.com###card:contains(Welcome to live chat)
+youtube.com###contents > ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer:contains(Recommended Primetime)
+youtube.com###contents > ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer:nth-child(9)
+youtube.com##.annotation, .annotation-type-custom, .iv-branding
+zpaste.net###tm-main > div.uk-container > main.tm-content > div.uk-article:last-child > div.uk-card.uk-card-default.uk-card-small.uk-card-body > div.uk-card.uk-card-secondary.uk-card-small.uk-card-body.uk-margin:nth-child(3)
+||*imrworldwide.com*^
+||*scorecardresearch.com*^
+||*track.wargaming-aff.com*^
+||*yadro.ru*^
+||adc3-launch.adcolony.com^
+||ads30.adcolony.com^
+||events3alt.adcolony.com^
+||ipinfo.io^
+||leak.sx^$popup,important
+||shadowserver.org^
+||team-octavi.com/wp-content/plugins/cm-pop-up-banners/
+||uploadedpremiumlink.net^$important,
