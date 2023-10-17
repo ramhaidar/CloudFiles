@@ -1,6 +1,6 @@
-[yo ndak tau kok tanya saya]
+[Adblock Plus 2.0]
 ! Version: 0.0.1
-! Title: My Personal Filter List
+! Title: yo ndak tau kok tanya saya
 ! Last modified:
 ! Expires: 7 days (update frequency)
 
