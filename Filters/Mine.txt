@@ -1,3 +1,9 @@
+[yo ndak tau kok tanya saya]
+! Version: 0.0.1
+! Title: My Personal Filter List
+! Last modified:
+! Expires: 7 days (update frequency)
+
 @@/(//|\.|^)github\.[a-z]{2,20}(/|$)/$document,match-case,domain=~com|~org|~net|~co|~blog|~community|~host|~io|~microsoft|~office
 @@||*.whatsapp.*
 @@||127.0.0.1^$important,document
