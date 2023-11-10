@@ -34,6 +34,8 @@
 @@||www.nicehash.com^
 @@||www.racevpn.com^
 @@||www.scribbr.com^
+@@||www.youtube.com/live_chat^$important,document
+@@||youtube.com/live_chat^$important,document
 banghaji.com###chp_ads_blocker-modal
 banghaji.com###chp_ads_blocker-overlay
 blog.fastssh.com###lrgwkd-blanket
@@ -95,4 +97,4 @@ zpaste.net###tm-main > div.uk-container > main.tm-content > div.uk-article:last-
 ||leak.sx^$popup,important
 ||shadowserver.org^
 ||team-octavi.com/wp-content/plugins/cm-pop-up-banners/
-||uploadedpremiumlink.net^$important,
+||uploadedpremiumlink.net^$important,document
