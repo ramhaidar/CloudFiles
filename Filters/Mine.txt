@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 0.0.2
+! Version: 0.0.3
 ! Title: yo ndak tau kok tanya saya
 ! Last modified:
 ! Expires: 7 days (update frequency)
@@ -28,8 +28,10 @@
 @@||graph*.instagram.com
 @@||kampusmerdeka.kemdikbud.go.id^$important,document
 @@||leak.sx^$important,document
+@@||lms.telkomuniversity.ac.id^$important,document
 @@||network-test.debian.org^
 @@||resolver1.opendns.com^
+@@||telkomuniversityofficial-my.sharepoint.com^$important,document
 @@||tiny.cc^$important,document
 @@||www.nicehash.com^
 @@||www.racevpn.com^
@@ -60,6 +62,8 @@ kabargames.id###post-18129 > div.post__content:nth-child(3) > div.dable-content-
 keepv.id###moreOptions > h6:last-child > div.row > div.col-lg-12 > table.table:last-child > tbody:last-child > tr:last-child
 link.centipedia.net###qlhdum-blanket
 mazterize.com###tp-section-left > div.post-content:first-child > div.post-outer.clearfix > div.post_content.entry-content:nth-child(4) > p:nth-child(17)
+online-fix.me###qwerty_wrap
+online-fix.me##div.wrapper.clr:nth-child(5) > div.flex-stretch:nth-child(2) > div.content:first-child > div.news-container:last-child > div.horizontal-slider:first-child
 paste.bin.sx###abDetectorModal
 paste.bin.sx##div.movilno:nth-child(13)
 pixlr.com###modal*
